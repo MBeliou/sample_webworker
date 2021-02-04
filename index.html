@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Workers</title>
+    <link rel='stylesheet' href='/index.css'>
+</head>
+
+<body class="flex items-center justify-center">
+    <div class="container mx-auto">
+        <h1>Threaded Fibonnaci</h1>
+        <div>
+            <label for="input">Input</label>
+            <input type="number" min="0" value="10000000" id="input" />
+            <button onclick="onButtonPress()">
+                What's my fibonnaci?
+            </button>
+        </div>
+        <p>Status: <span id="status">Waiting for input</span></p>
+        <p>Your result is: <span id="result">0</span></p>
+    </div>
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
